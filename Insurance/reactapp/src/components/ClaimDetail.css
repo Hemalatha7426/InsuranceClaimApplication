@@ -1,0 +1,99 @@
+/* Container for claim details */
+.claim-detail {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0f172a;
+  animation: fadeUp 0.6s ease;
+}
+
+/* Loading state */
+.claim-detail.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #64748b;
+}
+
+/* Title */
+.claim-detail h2 {
+  font-size: 1.8rem;
+  color: #4f46e5;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Details text */
+.claim-detail p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #334155;
+  line-height: 1.5;
+}
+
+/* Bold labels */
+.claim-detail strong {
+  font-weight: 600;
+  color: #1e293b;
+}
+
+/* Status edit section */
+.status-edit {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Select dropdown */
+.status-edit select {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1.5px solid #4f46e5;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.status-edit select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 8px rgba(79, 70, 229, 0.3);
+}
+
+/* Button */
+.btn-primary {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #4338ca, #2563eb);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.3);
+}
+
+/* Fade-up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

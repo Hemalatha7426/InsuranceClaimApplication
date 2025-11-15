@@ -1,0 +1,36 @@
+.main-nav {
+ display: flex;
+ gap: 1rem;
+}
+
+.nav-link {
+ background: transparent;
+ border: none;
+ color: white;
+ font-weight: 500;
+ padding: 0.6rem 1rem;
+ border-radius: 8px;
+ cursor: pointer;
+ transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+ background: rgba(255, 255, 255, 0.15);
+ transform: translateY(-2px);
+}
+
+.btn-logout {
+ background: #ff5a5a;
+ color: white;
+ border: none;
+ padding: 0.6rem 1.2rem;
+ border-radius: 8px;
+ cursor: pointer;
+ transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+ background: #e04b4b;
+ transform: translateY(-2px);
+}
+

@@ -1,0 +1,183 @@
+/* ClaimList.css */
+
+.claim-list {
+  max-width: 1200px;
+  margin: 40px auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #0f172a;
+  animation: fadeIn 0.5s ease;
+}
+
+.claim-list h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #4f46e5;
+  margin-bottom: 30px;
+  letter-spacing: 0.03em;
+}
+
+/* Filter bar */
+.filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  justify-content: flex-end;
+}
+
+.filter-bar label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.filter-bar select {
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 2px solid #4f46e5;
+  background: #eef2ff;
+  font-weight: 600;
+  color: #1e293b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-bar select:hover,
+.filter-bar select:focus {
+  background-color: #e0e7ff;
+  border-color: #4338ca;
+  outline: none;
+}
+
+/* Table styling */
+.table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 12px;
+}
+
+.table th {
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  color: #eef2ff;
+  text-align: left;
+  padding: 14px 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 12px 12px 0 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.table th:hover {
+  background: linear-gradient(135deg, #4338ca, #3730a3);
+}
+
+.table td {
+  background: #ffffff;
+  padding: 14px 12px;
+  font-size: 0.95rem;
+  color: #1e293b;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.table td:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+.table select {
+  padding: 6px 12px;
+  border: 2px solid #4338ca;
+  border-radius: 10px;
+  background: #eef2ff;
+  font-weight: 600;
+  color: #3730a3;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.table select:hover,
+.table select:focus {
+  background-color: #dbeafe;
+  border-color: #312e81;
+  outline: none;
+}
+
+/* Buttons */
+.btn-small {
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+  color: #ffffff;
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  box-shadow: 0 4px 10px rgba(79,70,229,0.3);
+  transition: all 0.25s ease;
+}
+
+.btn-small:hover {
+  background: linear-gradient(135deg, #3730a3, #312e81);
+  box-shadow: 0 6px 14px rgba(55,48,163,0.5);
+  transform: translateY(-2px);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 600;
+  background: #eef2ff;
+  border: 2px solid #4f46e5;
+  color: #4f46e5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.pagination button:hover:enabled {
+  background: #e0e7ff;
+  border-color: #4338ca;
+  color: #312e81;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Empty state */
+.empty {
+  text-align: center;
+  padding: 30px 20px;
+  font-size: 1.2rem;
+  color: #6b7280;
+  font-style: italic;
+  user-select: none;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.03);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
