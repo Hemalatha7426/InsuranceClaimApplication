@@ -64,13 +64,6 @@ https://github.com/user-attachments/assets/8a8ea729-7233-404d-b4d9-468457dd8107
 
 
 
-https://github.com/user-attachments/assets/260862d4-f538-4e0d-a774-1a475d4e2c94
 
-
-
-https://github.com/user-attachments/assets/dea37865-d7d0-4086-ad4c-57deb6f88b55
-
-
-https://github.com/user-attachments/assets/3b979f91-be53-41f8-954b-5354f91a83bc
 
 
